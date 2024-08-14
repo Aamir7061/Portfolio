@@ -1,0 +1,103 @@
+.tree-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+@media ( max-width: 640px){
+  .tree-container{
+    width:95%;
+    padding: 10px 10px;
+  }
+};
+
+
+.tree{
+  margin-top: 100px;
+}
+.tree-node {
+  position: relative;
+  width: 45%;
+  padding: 15px;
+  background-color: #0A192f;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  color: white;
+  border-color: #64ffda;
+  border-width: 2px;
+}
+
+.tree-node.left {
+  left: 0;
+  text-align: right;
+}
+
+.tree-node.right {
+  left: 55%;
+  text-align: left;
+}
+
+.tree-node.left::before,
+.tree-node.right::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 4px;
+  background-color: white;
+}
+
+.tree-node.left::before {
+  right: -20px;
+}
+
+.tree-node.right::before {
+  left: -20px;
+}
+
+.tree-node .institution h1{
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.tree-node .year {
+  color: white;
+  font-weight: 600;
+}
+.tree-node .content h3{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.tree-node .degree,
+.tree-node .stream {
+  color: #64ffda;
+}
+
+.tree-node:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-5px);
+}
+
+.tree-node:hover .institution h1,
+.tree-node:hover .year {
+  color: black;
+}
+
+.tree-node:hover .degree,
+.tree-node:hover .stream {
+  color: #64ffda;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
