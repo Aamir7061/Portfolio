@@ -131,7 +131,7 @@ const SkillInfo=[
     },
     {
         title: "Computer Vision",
-        skills: ["OpenCV","Mediapipe","Pillow","CNN","RNN","VGG16","YOLO"]
+        skills: ["OpenCV","Mediapipe","Pillow","CNN","RNN","VGG16","Yolo"]
     },
     {
         title: "Audio NLP and Web Scrapping",
